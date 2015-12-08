@@ -8,18 +8,18 @@ using namespace std;
 void krechner(const int a,const int b, const double c, double* k, double* y);
 
 int main(int argc, char** argv){
-    if (argc != 3){
-        cerr << "argc != 3" << endl;
-        return 1;
-    }
+    //if (argc != 2){
+        //cerr << "argc != 2" << endl;
+       // return 1;
+   // }
     
-    //ofstream out("lorenzdaten0");
-    ofstream out(argv[2]);
+    ofstream out("lorenzdaten0");
+    //ofstream out(argv[2]);
     
     const int a=10,b=28;
     const double c=8.0/3.0;
-    //const int N = 10000;
-    const int N = atoi(argv[1]);
+    const int N = 10000000;
+    //const int N = atoi(argv[1]);
     const int tend = 100;
     const double dt = double(tend)/N;
     
